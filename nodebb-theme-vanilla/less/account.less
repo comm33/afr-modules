@@ -1,0 +1,702 @@
+._authentication {
+	padding-top: 50px;
+	margin: 0;
+	background: #191918;
+	min-height: 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow-x: visible;
+	bottom: 0;
+}
+._account-form {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	width: 100%;
+	padding: 0 15px;
+	padding-top: 10px;
+	padding-bottom: 6px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	line-height: 1.6;
+	border-color: #FFF;
+	height: 22px;
+	margin: 0;
+}
+
+/*
+._account-m-settings,
+._account-m-settings-m,
+._account-m-settings-b {
+	//background: rgba(0, 0, 0, 0.035);
+}
+._account-m-settings {
+	//border-top: 1px solid rgba(0, 0, 0, 0.1);
+	//box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px inset;
+	//margin-top: 10px;
+}
+._account-m-settings-b {
+	//border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+*/
+
+._su {
+	//opacity: .65;
+}
+
+._or {
+	margin-top: 15px;
+	margin-bottom: 17px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	> span {
+		color: rgba(49, 49, 49, 0.4);
+		font-weight: 600;
+		font-size: 12px;
+		padding-left: 10px;
+		padding-right: 10px;
+		position: relative;
+		&:before,
+		&:after {
+			display: inline-block;
+			vertical-align: baseline;
+			zoom: 1;
+			margin-left: 10px;
+			margin-right: 10px;
+			content: "";
+			height: 1px;
+			width: 35%;
+			background-color: rgba(49, 49, 49, 0.06);
+			vertical-align: middle;
+		}
+	}
+}
+
+.account, 
+.account-edit {
+/*
+	.topic-row {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		border: 1px solid #EBEFF6;
+		padding-bottom: 15px;
+		border-radius: 0;
+	}
+*/
+	.user-profile-picture {
+	
+	}
+}
+
+.account .hero-banner,
+.settings .hero-banner,
+.favourites .hero-banner,
+.notifications .hero-banner {
+	position: relative;
+	z-index: 5;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.account-banner {
+	overflow: visible;
+	//min-height: 250px;
+}
+
+.favourites {
+	.topic-row {
+		/*
+		Not sure what I was going
+		to use this for or what it
+		was used for, but meh. GTFO.
+		width: 100%;
+		margin-bottom: 10px;
+		border: 0 none;
+		border-top: 1px solid #EBEFF6;
+		padding-bottom: 0;
+		*/
+	}
+}
+
+.fullname {
+	display: block;
+	letter-spacing: -0.02em;
+	font-size: 42px;
+	line-height: 1;
+	margin-top: 5px;
+} 
+
+.account-username-box {
+	z-index: 1;
+	position: relative;
+}
+.account-sub-links .dropdown-menu {
+	z-index: 1100;
+}
+.account-sub-links .dropdown-menu li {
+	text-align: left;
+}
+.account-sub-links .dropdown-menu li.active a {
+	font-weight: bold;
+}
+.account-sub-links .dropdown-menu li a {
+	&:hover {
+		background: rgba(0, 0, 0, 0.035);
+		margin-left: -1px;
+		padding-left: 21px !important;
+		margin-right: -1px;
+	}
+}
+
+.dropdown-menu>li>a:hover, 
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:hover, 
+.dropdown-menu>.active>a:focus {
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.account-sub-links a{
+	margin-left: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	padding-left: 10px !important;
+}
+.account-sub-links .text-pb:hover,
+.account-sub-links .text-pb:focus,
+.account-sub-links .text-pb:active {
+	color: rgba(0, 0, 0, 0.8) !important;
+}
+.account-sub-links .popover-arrow {
+	margin-left: -18px;
+}
+.account-sub-links .share {
+	padding: 5px 15px;
+	color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.account-block {
+	div {
+		padding-bottom:10px;
+	}
+}
+.account-picture-block {
+    display:inline-block;
+    vertical-align:top;
+}
+.account-online-status {
+	position: relative;
+	top: -120px;
+	left: 60px;
+	display: inline;
+	z-index: 10;
+}
+.account-username { 
+	//
+}
+
+#user-current-picture,
+.user-profile-picture {
+	width:116px;
+	height: 116px;
+}
+.user-picture-label {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	left: 0;
+	top: -20px;
+	right: 0;
+	color: rgba(0, 0, 0, 0.6);
+	margin-left: -6px;
+	letter-spacing: 0.02em;
+}
+
+.account-bio-block {
+	display:inline-block;
+	vertical-align:top;
+}
+.account-bio-label {
+	display:inline-block;
+	width:100px;
+}
+
+.account-info {
+	margin-right: 5px;
+}
+.account-info:not(:first-child) {
+	padding: 0 5px;
+	font-weight: 400;
+}
+.account-form {
+	display: inline-block;
+}
+.account-form-control {
+	border: 0 none;
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.signature {
+	margin: 25px;
+	-webkit-transition: margin .1s;
+	-moz-transition: margin .1s;
+	-ms-transition: margin .1s;
+	-o-transition: margin .1s;
+	transition: margin .1s;
+	line-height: 1.4;
+	text-align: center;
+	font-size: 26px;
+	-webkit-font-smoothing: antialiased;
+	//font-style: italic;
+	margin-top: 15px;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+	color: rgba(0, 0, 0, 0.6);
+	
+	//font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+	a {
+		color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+@media only screen and (max-width: 768px), 
+only screen and (max-device-width: 768px) {
+	.signature {
+		font-size: 24px;
+	}
+	.account-sub-links .share {
+		font-size: 16.5px;
+	}
+}
+@media only screen and (max-width: 480px), 
+only screen and (max-device-width: 480px) {
+	.signature {
+		font-size: 22px;
+	}
+	.account-sub-links .share {
+		font-size: 16.5px;
+		padding: 0 15px;
+	}
+}
+.user-recent-posts {
+	text-align: left;
+	div {
+		.pointer;
+		//overflow:hidden;
+		p {
+		
+		}
+	}
+
+	span {
+		/* padding-top: 10px; */
+	}
+}
+
+.user-card {
+	margin-bottom: 10px;
+}
+.user-thumb-sm {
+	width: 50px;
+	height: 50px;
+}
+.user-avatar {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.user-card .user-thumb-sm .user-avatar {
+	width: 50px;
+	height: 50px;
+}
+
+
+@media only screen and (max-width: 992px), 
+only screen and (max-device-width: 992px) { 
+	.user-avatar {
+		width: 42px;
+		height: 42px;
+	}
+	.account-sub-links .share {
+		font-size: 16.5px;
+		padding: 0 15px;
+	}
+	.fullname {
+		font-size: 38px;
+	}
+}
+
+@media only screen and (max-width: 767px), 
+only screen and (max-device-width: 767px) {  
+	.user-avatar {
+		width: 38px;
+		height: 38px;
+	}
+	.fullname {
+		font-size: 32px;
+	}
+}
+
+.spacer {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.overlay { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 999em;
+	-webkit-border-radius: 999em;
+	width: 116px;
+	height: 116px;
+}
+
+.change-picture {
+	display: block;
+	position: relative;
+}
+.change-picture:hover .overlay { 
+	display: block; 
+}
+.change-picture:hover .overlay:before { 
+	content: "\f055";
+	font-size: 30px;
+	font-family: FontAwesome;
+	color: #FFF;
+	top: 35%;
+	bottom: 35%;
+	position: absolute;
+	display: block;
+	left: 40%;
+	right: 40%;
+}
+
+.favourite-icon {
+	color: #FB6B5B;
+}
+
+.account-banned {
+	-webkit-filter:blur(6px);
+	-moz-filter:blur(6px);
+	-o-filter:blur(6px);
+	-ms-filter:blur(6px);
+	filter:blur(6px);
+	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\'><feGaussianBlur stdDeviation=\'4\' /></filter></svg>#blur");
+	text-decoration:none;
+	pointer-events: none;
+	margin-top: 0;
+	z-index: -1;
+	.hero-avatar {
+		display: none;
+	}
+	* img {
+		display: none !important;
+	}
+}
+.account-banned-text {
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 300;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+.account-header {
+	color: #FFF;
+} 
+
+.account-header a,
+.account-header a.bold {
+	color: rgba(0, 0, 0, 0.8);
+}
+.account-header a:hover {
+	color: rgba(0, 0, 0, 0.8);
+}
+.account-header {
+	padding-top: 15px;
+	//padding-left: 15px !important;
+	//padding-right: 15px !important;
+}
+.account-header .spacer {
+	color: rgba(255, 255, 255, 0.65);
+}
+.user-recent-posts {
+	/* overflow: hidden; */
+	text-overflow: ellipsis;
+	overflow-wrap: break-word;
+}
+
+.form-desc {
+	font-size: 14px;
+	font-weight: 300;
+	color: #B9B9B9;
+	////font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.account-stats {
+	font-size: 16px;
+	.text-muted {
+		font-weight: 400;
+		font-size: 12px;
+		font-weight: bold;
+		letter-spacing: 0.04em;
+	}
+}
+.account-stats-h {
+	color: #e1deed;
+}
+.account-footer:before {
+	content: "";
+	display: block;
+	width: 70px;
+	border-top: 1px solid #DEDEDC;
+	text-align: center;
+	margin: 0 auto 20px;
+}
+
+.hero-avatar {
+	width: 120px;
+	height: 120px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	//overflow: hidden;
+	//border: 3px solid #FFF;
+	z-index: 500;
+	//background-color: #FFF;
+	//-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	//-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	//box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+	text-align: center;
+	margin-top: -65px;
+	margin-bottom: 20px;
+}
+
+/* EXPERIMENTAL */
+.user-topics,
+.user-posts {
+	li {
+		list-style: none;
+	}
+	.deleted {
+		opacity: .3;
+		filter: alpha(opacity=30);
+		pointer-events: none;
+	}
+}
+
+._z {
+	z-index: 10;
+}
+
+input[type="data-autosize-input"] {
+  width: auto;
+  min-width: auto;
+  max-width: 100%;
+}
+
+._account-form-container,
+._account-label {
+	font-size: 18px;
+	font-weight: 300;
+	display: inline;
+	line-height: 30px;
+	//font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+	.form-char {
+		font-size: 16px;
+		color: rgba(185, 185, 185, 0.25);
+		margin-top: -38px;
+		position: absolute;
+		background: rgba(255, 255, 255, 0.8);
+		right: 0;
+	}
+	.form-desc {
+		font-size: 14px;
+		font-weight: 300;
+		color: #B9B9B9;
+		font-family: "DIN Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		line-height: 1.5;
+		margin-bottom: 15px;
+		margin-top: -4px;
+	}
+}
+._account-label {
+	i {
+		//color: rgba(0, 0, 0, 0.3);
+	}
+}
+._account-form {
+	border: 0 none;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	width: auto;
+	min-width: auto;
+	max-width: 100%;
+	transition: width 0.25s;
+	//font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+	text-overflow: ellipsis;
+	margin-left: 2px;
+	height: 22px;
+}
+._account-form-textarea {
+	border: 0 none;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 40px;
+	width: 100%;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+._account-form:focus,
+._account-form-textarea:focus {
+	//font-weight: 400;
+}
+._account-text {
+	text-overflow: inherit;
+	display: inline;
+}
+
+._input-group {
+	position: relative;
+	display: inline;
+	border-collapse: collapse;
+	//font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+._input-group-addon {
+	display: inline-block;
+	position: relative;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	vertical-align: 2px;
+	margin-top: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+._dropdown:after {
+	content: "\f107";
+	position: absolute;
+	float: right;
+	right: 28px;
+	cursor: pointer;
+	top: 6px;
+	padding-left: 6px;
+	border-left: 1px solid rgba(255, 255, 255, 0.25);
+	font-size: 17px;
+	color: #FFF;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+._dropdown p {
+	display: inline-block;
+	font-weight: bold;
+}
+
+._dropdown select {
+    border: 0!important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-position: 80px 8px;
+	width: 100px;
+	height: 30px;
+	text-indent: .01px;
+	text-overflow: "";
+	cursor: pointer;
+	color: #FFF;
+	float: right;
+	font-weight: bold;
+	background: @purple;
+	text-align: center;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+		option {
+			text-align: center
+		}
+}
+
+#gravatar-box,
+#uploaded-box {
+	img {
+		.pointer;
+	}
+	i {
+		color: #FFF;
+		position: absolute;
+		/* left: 0; */
+		/* right: 0; */
+		bottom: 9px;
+		background: rgba(0, 0, 0, 0.2);
+		text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+		padding: 36px;
+		width: 90px;
+		font-size: 16px;
+		margin-left: -94px;
+		height: 90px;
+		border-radius: 999em;
+		-webkit-border-radius: 999em;
+		.pointer;
+	}
+}
+/* IE HACK */
+select::-ms-expand { display: none; }
+
+@media only screen and (max-width: 992px), 
+only screen and (max-device-width: 992px) { 
+	._account-form-container,
+	._account-label,
+	._account-form,
+	._account-form-textarea {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 767px), 
+only screen and (max-device-width: 767px) {
+	._account-form-container,
+	._account-label,  
+	._account-form,
+	._account-form-textarea {
+		font-size: 16px;	
+	}
+}
+
+._top {
+	vertical-align: top;
+	position: relative;
+	top: -20px;
+}
+
+
+
+
+
